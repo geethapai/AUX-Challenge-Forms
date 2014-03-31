@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------END RESET---------------*/
+
+
+/*------------general styles----------*/
+body {
+  font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+  color: #575967;
+  font-size: 11px;
+  background-color: #b3e3ff;
+  padding: 5px;
+}
+
+
+
+form {
+	width: 500px;
+	padding: 12px;
+	margin: 0 auto;
+	background-color: #fff;
+	counter-reset: number-counter;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+fieldset {
+	margin: 20px 5px 0 5px;
+	padding: 10px;
+	width: 450px;
+	position: relative;
+}
+
+
+legend {
+  font-family: 'Antic Slab', serif;
+  font-size: 20px;
+  color: #16748f;
+  counter-increment: number-counter;
+  height: 25px;
+}
+
+legend:before {
+	content: counter(number-counter);
+	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+	font-size: 12px;
+	background-color: #52a3d4;
+	color: #fff;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	border: solid 5px;
+	padding: 2px 2px 2.7px 2px;
+	display: inline-block;
+	text-align: center;
+	margin-left: -42px;
+	margin-right: 12px;
+	line-height: 25px;
+}
+
+
+label {
+	display: block;
+	margin: 15px 0 1px 18px;
+	padding: 6px;
+}
+
+input {
+	margin: auto;
+	display: block;
+	width: 400px;
+	height: 28px;
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+	
+}
+
+span {
+	margin: 3px 0 1px 24px;
+}
+
+.row-container {
+	float: left;
+	width: 450px;
+	padding: 10px 10px 20px 10px;
+	position: relative;
+	margin: auto;
+	background-color: #f3f5f5;
+	border-radius: 10px;
+}
+
+
+/*----------header section----------*/
+.banner {
+	background-color: #16748f;
+	width: 467px;
+	margin: auto;
+	padding: 29px;
+	border-top-left-radius: 10px;
+ 	border-top-right-radius: 10px;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size: 36px;
+  color: #fff;
+  padding: 2px;
+}
+
+h2 {
+	color: #b3e3ff;
+	font-size: 10px;
+}
+
+
+/*---------fieldset section 1 - name your portfolio*--------*/ 
+#portfolio-address {
+		width: 62%;
+		float: left;
+		border-top-right-radius: 0; 
+		border-bottom-right-radius: 0;
+		margin: 0 0 0 20px;
+}
+
+#sample {
+	float: right;
+	width: 25%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	text-align: center;
+	background-color: #f3f5f5;
+	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #575967;
+	margin: 0 23px 0 0;
+}
+
+/*----------fieldset section 2 - enter account details-------*/ 
+
+/*----------fieldset section 3 - enter payment info----------*/ 
+
+#c-number {
+	float: left;
+	display: block;
+	width: 44%;
+	margin: 0 0 0 24px;
+}
+
+
+.cards {
+	margin: 0;
+	padding: 0 10px;
+	width: 192px;
+	height: 32px;	
+	float: left;
+	display: inline;
+	position: relative;
+	vertical-align: top;
+}
+
+.cards label {
+	display: inline-block;
+	margin: 0px;
+	font-size: 0px;
+}
+
+.cards input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   position: absolute; 
+   width: 45px;	
+   height: 32px;
+   overflow: hidden; 
+   clip: rect(0 0 0 0); 
+   height: 1px; width: 1px; 
+   margin: -1px; padding: 0; border: 0; 
+}
+
+
+.amex-btn {
+	background: url('/assets/images/sprite.png') no-repeat 0 -290px;
+	width: 45px;
+	height: 32px;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+
+#amex-btn[type=radio]:checked, .amex-btn:hover  {
+	background: url('/assets/images/sprite.png') no-repeat 0 -122px;
+	width: 45px;
+	height: 32px;
+}
+
+
+.visa-btn {
+	background: url('/assets/images/sprite.png') no-repeat -48px -164px;
+	width: 45px;
+	height: 32px;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+#visa-btn[type=radio]:checked + label, .visa-btn:hover {
+	background: url('/assets/images/sprite.png') no-repeat -48px -122px;
+	width: 45px;
+	height: 32px;
+}
+
+
+.dsvr-btn {
+	background: url('/assets/images/sprite.png') no-repeat -96px -206px;
+	width: 45px;
+	height: 32px;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+#dsvr-btn[type=radio]:checked + label, .dsvr-btn:hover {
+	background: url('/assets/images/sprite.png') no-repeat -96px -122px;
+	width: 45px;
+	height: 32px;
+}
+
+
+.mc-btn {
+	background: url('/assets/images/sprite.png') no-repeat -144px -248px;
+	width: 45px;
+	height: 32px;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+#mc-btn[type=radio]:checked + label, .mc-btn:hover {
+	background: url('/assets/images/sprite.png') no-repeat -144px -122px;
+	width: 45px;
+	height: 32px;
+}
+
+/*----------security label----------*/ 
+.security {
+	display: block;
+	margin: 48px 0 1px 21px;
+	padding: 6px;
+}
+
+#security {
+	float: left;
+	display: block;
+	width: 90px;
+	margin: 0 0 0 24px;
+}
+
+.cvv {
+	background: url('/assets/images/sprite.png') no-repeat 0 -374px;
+	width: 62px;
+	height: 32px;
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+
+.amexcvv {
+	background: url('/assets/images/sprite.png') no-repeat 0 -331px;
+	width: 70px;
+	height: 33px;
+	display: inline-block;
+	margin: 0;
+}
+
+/*--------------expiration date------------*/
+
+select {
+	margin-left: 22px;
+	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+}
+
+button {
+	padding: 10px;
+	margin: auto;
+	border-radius: 4px;
+	background-color: #7f9d36;
+	font-family: 'Antic Slab', serif;
+	font-size: 16px;
+	color: #fff;
+	margin-left: 158px;
+}
+
+/*--------------submit button---------------*/
+
+button:hover {
+	padding: 10px;
+	margin: auto;
+	border-radius: 4px;
+	background-color: #B1CE69;
+	font-family: 'Antic Slab', serif;
+	font-size: 16px;
+	color: #fff;
+	margin-left: 158px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

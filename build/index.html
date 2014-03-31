@@ -2,26 +2,123 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Sign Up for Whoo!</title>
+    <link rel="stylesheet"   href="assets/css/styles.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+
 </head>
 
-<body>
+	<body>      
+			<header role="banner" class="banner">
+				<h1>Sign up for Whoo!</h1>
+				<h2>50 projects, 500 images, 10 videos, domain binding, and technical support.</h2>
+			</header>	
 
-    
-        
-        <form action="" method="get">
-            
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" minlength="2"/>
-            
-            <label for="name">E-mail</label>
-            <input type="email" id="email" name="email" minlength="2"/>
-            
-            <button type="submit" name="send">Send!</button>
-            
-        </form>
-    
-   
+	    <form action="" method="get">      
+		
+	<!-- section 1 - portfolio info -->
+			<fieldset class="portfolio">  
+		    <legend>First, name your portfolio</legend>	    
+				  
+			    <div class="row-container">    
+					    <label for="portfolio-title">Portfolio title</label> 
+					    <input type="text" id="portfolio-title" name="portfolio-title" aria-required="true" required/>
+				
+					    <label for="portfolio-address">Portfolio address</label>
+					    <input type="text" id="portfolio-address" name="portfolio-address" aria-required="true" required/>	
+					    <input type="text" id="sample" name="sample" value=".sample" aria-labelledby="portfolio-address" disabled/>
+			  
+			    </div><!-- row-container -->
+			</fieldset>	
 
-</body>
-</html>
+	
+	<!-- section 2 - account/contact info -->
+		
+			<fieldset class="account-details">    
+			    <legend>Now, enter your account details</legend>  
+				    <div class="row-container">  
+						    
+						    <label for="name">Name</label>
+						    <input type="text" id="name" name="name" aria-required="true" required/>
+				    
+						    <label for="email">Email</label>
+						    <input type="email" id="email" name="email" aria-required="true" required/>
+							<span aria-describedby="note">NOTE: We'll never share your email, promise.</span>
+	
+					    
+						    <label for="pword">Password</label>
+						    <input type="password" id="pword" name="pword" required/>
+						
+						</div><!-- row-container -->
+			</fieldset>	
+		
+
+<!-- 	section 3 - payment info  -->
+		
+			<fieldset class="payment">    
+			    <legend>Finally, enter your payment information</legend>  
+				  	<div class="row-container">
+					    
+					    <label for="c-number">Card number</label>
+					    <input type="text" pattern="[0-9]{13,16}" id="c-number" name="c-number" autocomplete="off" aria-required="true" required/>
+
+				   		<fieldset class="cards">
+				   			<input type="radio" name="cardtype" id="amex-btn" value="american-express">
+				   			<label for="amex-btn" class="amex-btn">American Express
+							</label>
+
+				   			<input type="radio" name="cardtype" id="visa-btn" value="visa">
+				   			<label for="visa-btn" class="visa-btn">Visa</label>
+				   			
+				   			<input type="radio" name="cardtype" id="dsvr-btn"  value="discover">
+				   			<label for="dsvr-btn" class="dsvr-btn">Discover</label>
+
+				   			<input type="radio" name="cardtype" id="mc-btn" value="mastercard">
+				   			<label for="mc-btn" class="mc-btn">MasterCard</label>
+							</fieldset>
+					  
+						
+
+						  <label for="security" class="security">Security code</label>
+						  <input type="number" id="security" name="security" aria-required="true" required/>
+				   		<span class="cvv"></span>
+				   		<span class="amexcvv"></span>
+
+				   	
+
+				    
+					    <label for="expiration-date">Expiration date</label>
+					    	<select type="month" label="select-month" id="select-month" aria-required="true" required/>
+						    	<option value="0" disabled selected>Month</option>
+						    	<option value="1">January</option>
+						    	<option value="2">February</option>
+						    	<option value="3">March</option>
+						    	<option value="4">April</option>
+						    	<option value="5">May</option>
+						    	<option value="6">June</option>
+						    	<option value="7">July</option>
+						    	<option value="8">August</option>
+						    	<option value="9">September</option>
+						    	<option value="10">October</option>
+						    	<option value="11">November</option>
+						    	<option value="12">December</option>
+					    	</select>	
+					   
+								<select type="year" id="select-year" aria-required="true" required/>
+								  <option value="00" disable selected>Year</option>
+						    	<option value="1">2014</option>
+						    	<option value="2">2015</option>
+						    	<option value="3">2016</option>
+						    	<option value="4">2017</option>
+						    	<option value="5">2018</option>
+						    	<option value="5">2019</option>
+						    </select>
+					    
+					</div> <!-- row-container -->
+				</fieldset><!-- payment -->	
+			
+						<button type="submit" name="send">Create your portfolio</button>    				
+				
+				</form>
+			</body>
+		</html>
