@@ -215,13 +215,13 @@ h2 {
 .cards input {
   -webkit-appearance: none;
   -moz-appearance: none;
-   position: absolute; 
    width: 45px;	
    height: 32px;
+   position: absolute;  
    overflow: hidden; 
-   clip: rect(0 0 0 0); 
-   height: 1px; width: 1px; 
-   margin: -1px; padding: 0; border: 0; 
+   /*clip: rect(0 0 0 0);*/
+   height: 32px; width: 45px; 
+   margin: -1px; padding: 0; border: 0; */
 }
 
 
@@ -234,8 +234,7 @@ h2 {
 }
 
 
-
-#amex-btn[type=radio]:checked, .amex-btn:hover  {
+#amex-btn[type=radio]:checked + label, .amex-btn:hover  {
 	background: url('/assets/images/sprite.png') no-repeat 0 -122px;
 	width: 45px;
 	height: 32px;
@@ -351,6 +350,7 @@ button:hover {
 }
 
 
+/*--------------lock sign ---------------*/
 
 
 
