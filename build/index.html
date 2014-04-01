@@ -22,11 +22,17 @@
 				  
 			    <div class="row-container">    
 					    <label for="portfolio-title">Portfolio title</label> 
-					    <input type="text" id="portfolio-title" name="portfolio-title" aria-required="true" required/>
+					    <input type="text" id="portfolio-title" name="portfolio-title" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
+
+					    <span id="p-title-error" aria-describedby="c-number"></span>
+
+
 				
 					    <label for="portfolio-address">Portfolio address</label>
-					    <input type="text" id="portfolio-address" name="portfolio-address" aria-required="true" required/>	
-					    <input type="text" id="sample" name="sample" value=".sample" aria-labelledby="portfolio-address" disabled/>
+					    <input type="text" id="portfolio-address" name="portfolio-address" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>	
+					    <input type="text" id="sample" name="sample" value=".sample" aria-labelledby="sample"/>
+
+					    <span id="p-address-error" aria-describedby="c-number"></span>
 			  
 			    </div><!-- row-container -->
 			</fieldset>	
@@ -39,7 +45,7 @@
 				    <div class="row-container">  
 						    
 						    <label for="name">Name</label>
-						    <input type="text" id="name" name="name" aria-required="true" required/>
+						    <input type="text" id="name" name="name" pattern=".{2,}" required title="At least 2 characters are required."aria-required="true" required/>
 				    
 						    <label for="email">Email</label>
 						    <input type="email" id="email" name="email" aria-describedby="note" aria-required="true" required/>
@@ -47,7 +53,7 @@
 	
 					    
 						    <label for="pword">Password</label>
-						    <input type="password" id="pword" name="pword" required/>
+						    <input type="password" id="pword" name="pword" pattern=".{5,}" required title="At least 5 characters are required." required/>
 						
 						</div><!-- row-container -->
 			</fieldset>	
@@ -116,7 +122,7 @@
 						    </select>
 					   
 					
-					<span id="secure-transaction" aria-describedby="secure-transaction">Verify your secure transaction<a href="#"></a></span>
+					<span id="secure-transaction" aria-describedby="c-number">Verify your secure transaction<a href="#"></a></span>
 					
 
 

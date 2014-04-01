@@ -170,6 +170,15 @@ h2 {
 		margin: 0 0 0 20px;
 }
 
+#p-title-error {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
 #sample {
 	float: right;
 	width: 25%;
@@ -182,6 +191,15 @@ h2 {
 	color: #575967;
 	margin: 0 23px 0 0;
 }
+
+#p-address-error {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
 
 /*----------fieldset section 2 - enter account details-------*/ 
 
