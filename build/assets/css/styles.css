@@ -201,9 +201,8 @@ h2 {
 	width: 192px;
 	height: 32px;	
 	float: left;
-	display: inline;
+	display: inline-block;
 	position: relative;
-	vertical-align: top;
 }
 
 .cards label {
@@ -215,74 +214,75 @@ h2 {
 .cards input {
   -webkit-appearance: none;
   -moz-appearance: none;
-   width: 45px;	
-   height: 32px;
-   position: absolute;  
    overflow: hidden; 
-   /*clip: rect(0 0 0 0);*/
-   height: 32px; width: 45px; 
-   margin: -1px; padding: 0; border: 0; */
+   height: 32px; 
+   width: 45px; 
+   margin: -6px; 
+   padding: 0; 
+   border: 0; 
+   display: inline-block;
 }
 
 
-.amex-btn {
+#amex-btn[type=radio] {
 	background: url('/assets/images/sprite.png') no-repeat 0 -290px;
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	vertical-align: top;
+	margin-top: 1px;
 }
 
 
-#amex-btn[type=radio]:checked + label, .amex-btn:hover  {
+#amex-btn[type=radio]:checked, #amex-btn:hover  {
 	background: url('/assets/images/sprite.png') no-repeat 0 -122px;
 	width: 45px;
 	height: 32px;
+
 }
 
 
-.visa-btn {
+#visa-btn[type=radio] {
 	background: url('/assets/images/sprite.png') no-repeat -48px -164px;
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	vertical-align: top;
+	margin-top: 1px;
 }
 
 
-#visa-btn[type=radio]:checked + label, .visa-btn:hover {
+#visa-btn[type=radio]:checked, #visa-btn:hover {
 	background: url('/assets/images/sprite.png') no-repeat -48px -122px;
 	width: 45px;
 	height: 32px;
 }
 
 
-.dsvr-btn {
+#dsvr-btn[type=radio]{
 	background: url('/assets/images/sprite.png') no-repeat -96px -206px;
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	vertical-align: top;
+	margin-top: 1px;
 }
 
 
-#dsvr-btn[type=radio]:checked + label, .dsvr-btn:hover {
+#dsvr-btn[type=radio]:checked, #dsvr-btn:hover {
 	background: url('/assets/images/sprite.png') no-repeat -96px -122px;
 	width: 45px;
 	height: 32px;
 }
 
 
-.mc-btn {
+#mc-btn[type=radio] {
 	background: url('/assets/images/sprite.png') no-repeat -144px -248px;
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	vertical-align: top;
+	margin-top: 1px;
 }
 
 
-#mc-btn[type=radio]:checked + label, .mc-btn:hover {
+#mc-btn[type=radio]:checked, #mc-btn:hover {
 	background: url('/assets/images/sprite.png') no-repeat -144px -122px;
 	width: 45px;
 	height: 32px;
@@ -302,20 +302,24 @@ h2 {
 	margin: 0 0 0 24px;
 }
 
-.cvv {
+#cvv {
 	background: url('/assets/images/sprite.png') no-repeat 0 -374px;
 	width: 62px;
 	height: 32px;
 	display: inline-block;
 	margin: 0 0 0 5px;
+	font-size: 0;
+	vertical-align: top;
 }
 
-.amexcvv {
+#amexcvv {
 	background: url('/assets/images/sprite.png') no-repeat 0 -331px;
 	width: 70px;
 	height: 33px;
 	display: inline-block;
 	margin: 0;
+	font-size: 0;
+	vertical-align: top;
 }
 
 /*--------------expiration date------------*/
@@ -336,6 +340,20 @@ button {
 	margin-left: 158px;
 }
 
+
+/*--------------lock sign ---------------*/
+
+#secure-transaction {
+	position: relative;
+	float: right;
+	margin: 0 0 0 5px;
+	background: url('/assets/images/sprite.png') no-repeat -60px -499px;
+	width: 14px;
+	height: 19px;
+	font-size: 0px;
+}
+
+
 /*--------------submit button---------------*/
 
 button:hover {
@@ -350,7 +368,6 @@ button:hover {
 }
 
 
-/*--------------lock sign ---------------*/
 
 
 

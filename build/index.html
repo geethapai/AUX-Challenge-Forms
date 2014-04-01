@@ -14,7 +14,7 @@
 				<h2>50 projects, 500 images, 10 videos, domain binding, and technical support.</h2>
 			</header>	
 
-	    <form action="" method="get">      
+	    <form action="" method="get" id="form">      
 		
 	<!-- section 1 - portfolio info -->
 			<fieldset class="portfolio">  
@@ -42,8 +42,8 @@
 						    <input type="text" id="name" name="name" aria-required="true" required/>
 				    
 						    <label for="email">Email</label>
-						    <input type="email" id="email" name="email" aria-required="true" required/>
-							<span aria-describedby="note">NOTE: We'll never share your email, promise.</span>
+						    <input type="email" id="email" name="email" aria-describedby="note" aria-required="true" required/>
+							<span id="note" >NOTE: We'll never share your email, promise.</span>
 	
 					    
 						    <label for="pword">Password</label>
@@ -80,9 +80,10 @@
 						
 
 						  <label for="security" class="security">Security code</label>
-						  <input type="number" id="security" name="security" aria-required="true" required/>
-				   		<span class="cvv"></span>
-				   		<span class="amexcvv"></span>
+						  <input type="text" id="security" name="security" aria-required="true" required/>
+				   		<span id="cvv" aria-describedby="cvv">The security id is 3 numbers on the back of your card.</span>
+				   		<span id="amexcvv" aria-describedby="amexcvv">
+				   			The security id is 4 numbers on the front of your card.</span>
 
 				   	
 
@@ -113,14 +114,24 @@
 						    	<option value="5">2018</option>
 						    	<option value="5">2019</option>
 						    </select>
-					    
+					   
+					
+					<span id="secure-transaction" aria-describedby="secure-transaction">Verify your secure transaction<a href="#"></a></span>
+					
+
+
 					</div> <!-- row-container -->
 
+					
 
 				</fieldset><!-- payment -->	
 			
 						<button type="submit" name="send">Create your portfolio</button>    				
-				
 				</form>
+			
+				<script src="assets/js/lib/jquery.js"></script>
+				<script src="assets/js/lib/jquery.validate.js"></script>
+				<script src="assets/js/script.js"></script>
+
 			</body>
 		</html>
