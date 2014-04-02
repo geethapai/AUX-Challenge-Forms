@@ -179,6 +179,16 @@ h2 {
 }
 
 
+#p-title-success {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -31px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+
 #sample {
 	float: right;
 	width: 25%;
@@ -200,8 +210,70 @@ h2 {
 	margin: -28px -3px;
 }
 
+#p-address-success {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -31px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
 
 /*----------fieldset section 2 - enter account details-------*/ 
+#name-error {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+#name-success {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -31px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+#email-error {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+#email-success {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -31px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+#pword-error {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -2px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+#pword-success {
+	float: right;
+	background: url('/assets/images/sprite.png') no-repeat -31px -499px;
+	width: 19px;
+	height: 19px;
+	margin: -28px -3px;
+}
+
+
+
 
 /*----------fieldset section 3 - enter payment info----------*/ 
 
