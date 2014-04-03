@@ -290,7 +290,7 @@ h2 {
 	padding: 0 10px;
 	width: 192px;
 	height: 32px;	
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	position: relative;
 }
@@ -462,12 +462,18 @@ button:hover {
 	color: red;
 }
 
+#portfolio-address + label {
+	float: left;
+}
 
+/*#c-number + label {
+	float: left;
+}
 
-
-
-
-
+#security + label {
+	clear: both;
+}
+*/
 
 
 

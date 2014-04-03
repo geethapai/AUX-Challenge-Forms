@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="utf-8">
     <title>Sign Up for Whoo!</title>
     <link rel="stylesheet"   href="assets/css/styles.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+    <script src="assets/js/lib/modernizr.js"></script>"
 
 </head>
 
@@ -22,7 +23,7 @@
 				  
 			    <div class="row-container">    
 					    <label for="portfolio-title">Portfolio title</label> 
-					    <input type="text" id="portfolio-title" name="portfolio-title" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
+					    <input type="text" id="portfolio-title" name="portfoliotitle" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
 
 					   <!--  <span id="p-title-error" aria-describedby="c-number"></span>
 
@@ -31,8 +32,9 @@
 
 				
 					    <label for="portfolio-address">Portfolio address</label>
-					    <input type="text" id="portfolio-address" name="portfolio-address" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>	
-					    <input type="text" id="sample" name="sample" value=".sample" aria-labelledby="sample"/>
+					   
+					    <input type="text" id="sample" name="sample" value=".sample.com" aria-labelledby="sample"/>
+					     <input type="text" id="portfolio-address" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>	
 
 					   <!--  <span id="p-address-error" aria-describedby="c-number"></span>
 
@@ -86,7 +88,7 @@
 				  	<div class="row-container">
 					    
 					    <label for="c-number">Card number</label>
-					    <input type="text" pattern="[0-9]{13,16}" id="c-number" name="c-number" autocomplete="off" aria-required="true" required/>
+					    <input type="text" pattern="[0-9]{13,16}" id="c-number" name="cnumber" autocomplete="off" aria-required="true" required/>
 
 				   		<fieldset class="cards">
 				   			
@@ -115,7 +117,7 @@
 
 				    
 					    <label for="expiration-date">Expiration date</label>
-					    	<select type="month" label="select-month" id="select-month" aria-required="true" required/>
+					    	<select type="month" label="select-month" id="select-month" name="selectmonth" aria-required="true" required/>
 						    	<option value="0" disabled selected>Month</option>
 						    	<option value="1">January</option>
 						    	<option value="2">February</option>
@@ -131,14 +133,14 @@
 						    	<option value="12">December</option>
 					    	</select>	
 					   
-								<select type="year" id="select-year" aria-required="true" required/>
+								<select type="year" id="select-year" name="selectyear" aria-required="true" required/>
 								  <option value="00" disable selected>Year</option>
 						    	<option value="1">2014</option>
 						    	<option value="2">2015</option>
 						    	<option value="3">2016</option>
 						    	<option value="4">2017</option>
 						    	<option value="5">2018</option>
-						    	<option value="5">2019</option>
+						    	<option value="6">2019</option>
 						    </select>
 					   
 					
@@ -156,7 +158,7 @@
 				</form>
 			
 				<script src="assets/js/lib/jquery.js"></script>
-				<script src="assets/js/lib/jquery.validate.js"></script>
+				<script src="assets/js/lib/jquery.validate.min.js"></script>
 				<script src="assets/js/script.js"></script>
 				<script src="assets/js/formValidation.js"></script>
 			</body>
