@@ -457,6 +457,10 @@ button:hover {
 	margin-left: 158px;
 }
 
+/*--------------error messages---------------*/
+.error {
+	color: red;
+}
 
 
 
