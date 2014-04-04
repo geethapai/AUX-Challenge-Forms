@@ -117,10 +117,11 @@ jQuery(function($) {
 
 		}
 
-		submitHandler: function(form) {
+		/*submitHandler: function(form) {
             form.submit();
-        }
-
+      
+     }
+*/
 	}); //close form validation
  
 }); //close jQuery

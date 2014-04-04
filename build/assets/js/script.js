@@ -1,16 +1,5 @@
 //define the function
 
-/*/*var cardsAccepted = {
-	visa: {
-		nameInHtml: "#visa-btn",
-	},
-	}
-	"#visa-btn",
-	"mastercard": 
-}
-
-cardsAccepted.eat($("#card1"));*/
-
 function getCardType(number) {
 
 	var type; 
@@ -19,7 +8,7 @@ function getCardType(number) {
 	if (number.substring(0,2) == 34|| number.substring(0,2) == 37) {
 
 			type="amex";
-	
+
 	} //Visa starts with 4
 	 else if (number.substring(0,1) == 4) {
 
@@ -48,60 +37,50 @@ function changeCard(card) {
 
 		case "amex": 
 
-			//checked radio button
-			$("#amex-btn").prop("checked", true);
-			$("#cvv").hide();
-			$("#amexcvv").show();
+			document.getElementById("amex-btn").checked = true;
+			document.getElementById("cvv").style.visibility = "hidden";
+			document.getElementById("amexcvv").style.visibility = "visible";
 
-			break;
+		break;
 
 
 		case "visa": 
 
-			//checked radio button
-			$("#visa-btn").prop("checked", true);
-			$("#amexcvv").hide();
-			$("#cvv").show();
+			document.getElementById("visa-btn").checked = true;
+			document.getElementById("amexcvv").style.visibility = "hidden";
+			document.getElementById("cvv").style.visibility = "visible";
 
-			break;
-
+		break;
 
 
 		case "discover": 
 
-			//checked radio button
-			$("#dsvr-btn").prop("checked", true);
-			$("#amexcvv").hide();
-			$("#cvv").show();
+			document.getElementById("dsvr-btn").checked = true;
+			document.getElementById("amexcvv").style.visibility = "hidden";
+			document.getElementById("cvv").style.visibility = "visible";
 			
-			break;
+		break;
 
+		
 		
 		case "mastercard": 
 
-			//checked radio button
-			$("#mc-btn").prop("checked", true);
-			$("#amexcvv").hide();
-			$("#cvv").show();
-			
-			break;
+			document.getElementById("mc-btn").checked = true;
+			document.getElementById("amexcvv").style.visibility = "hidden";
+			document.getElementById("cvv").style.visibility = "visible";
+
+		break;
 
 	};
-
-	
 
 	}
 
 }
 
-//prevent default
-/*event.preventDefault();*/
+// event listener	
+	document.getElementById("c-number").addEventListener("keyup", function() {
 
-
-// event listener
-$("#c-number").bind("keyup blur", function() {
-
-	var number = $("#c-number").val();
+	var number = document.getElementById("c-number").value;
 
 	var card = getCardType(number);
 
