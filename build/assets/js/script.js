@@ -48,12 +48,13 @@ function changeCard(card) {
 		var thiscard_button = everyCard[card];
 		document.getElementById(thiscard_button).checked = true;
 
-		if (card == amex){
-			document.getElementById("cvv").style.visibility = "hidden";
-			document.getElementById("amexcvv").style.visibility = "visible";
+		if (card == "amex"){
+			document.getElementById("cvv").style.display = "none";
+			document.getElementById("amexcvv").style.visibility = "block";
+
 		} else {
-			document.getElementById("amexcvv").style.visibility = "hidden";
-			document.getElementById("cvv").style.visibility = "visible";
+			document.getElementById("amexcvv").style.visibility = "none";
+			document.getElementById("cvv").style.visibility = "block";
 		};
 
 
@@ -75,6 +76,25 @@ function changeCard(card) {
 
 
 //modernizr sniffing for html5 required attribute
+
+(function () {
+
+console.log("it works")
+
+Modernizr.load ([ 
+	{
+		test: Modernizr.input.required,
+		nope: ['/assets/js/lib/jquery.js', '/assets/js/lib/jquery.validate.min.js', '/assets/js/formValidation.js']
+	}
+
+	]);
+
+})();
+
+
+
+
+
 /*(function ($) {
 
 	console.log('I am loaded!');
@@ -82,9 +102,9 @@ function changeCard(card) {
 	// check for "required" input support with modernizr
 	if (!Modernizr.input.required) {
 
-		$.loadScript('jquery.js', true, callback);
-		$.loadScript('jquery.validate.min.js', true, callback);
-		$.loadScript('formValidation.js', true, callback);	
+		$.getScript('jquery.js', true, callback);
+		$.getScript('jquery.validate.min.js', true, callback);
+		$.getScript('formValidation.js', true, callback);	
 
 		}
 });*/

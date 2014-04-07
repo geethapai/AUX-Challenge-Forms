@@ -5,11 +5,7 @@
     <title>Sign Up for Whoo!</title>
     <link rel="stylesheet"   href="assets/css/styles.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
-    <script src="assets/js/lib/modernizr.js"></script>
-<!--[if lt IE9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]--> 
-
+    <script src="assets/js/lib/modernizr.js"></script> 
 
 </head>
 
@@ -29,22 +25,15 @@
 					    <label for="portfolio-title">Portfolio title</label> 
 					    <input type="text" id="portfolio-title" name="portfoliotitle" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
 
-					   <!--  <span id="p-title-error" aria-describedby="c-number"></span>
-
-
-					    <span id="p-title-success" aria-describedby="c-number"></span> -->
-
-				
+					  
 					    <label for="portfolio-address">Portfolio address</label>
 					   
-					    <input type="text" id="sample" name="sample" value=".sample.com" tabindex=-1 disabled aria-labelledby="sample"/>
+					    <!-- <input type="text" id="sample" name="sample" value=".sample.com" tabindex=-1 disabled aria-labelledby="sample"/> -->
+
+					    <span class="sample" aria-labelledby="portfolio-address" >.sample.com</span>
+
 					     <input type="text" id="portfolio-address" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>	
 
-					   <!--  <span id="p-address-error" aria-describedby="c-number"></span>
-
-					    <span id="p-address-success" aria-describedby="c-number"></span>
- -->
-			  
 			    </div><!-- row-container -->
 			</fieldset>	
 
@@ -58,28 +47,13 @@
 						    <label for="name">Name</label>
 						    <input type="text" id="name" name="name" pattern=".{2,}" required title="At least 2 characters are required."aria-required="true" required/>
 				    
-						    <!-- <span id="name-error" aria-describedby="c-number"></span>
-
-						    <span id="name-success" aria-describedby="c-number"></span> -->
 
 						    <label for="email">Email</label>
 						    <input type="email" id="email" name="email" aria-describedby="note" aria-required="true" required/>
 							<span id="note" >NOTE: We'll never share your email, promise.</span>
-	
 
-							<!-- <span id="email-error" aria-describedby="c-number"></span>
-
-
-							<span id="email-success" aria-describedby="c-number"></span> -->
-
-					    
 						    <label for="pword">Password</label>
 						    <input type="password" id="pword" name="pword" pattern=".{5,}" required title="At least 5 characters are required." required/>
-
-
-						   <!--  <span id="pword-error" aria-describedby="c-number"></span>
-
-						    <span id="pword-success" aria-describedby="c-number"></span> -->
 						
 						</div><!-- row-container -->
 			</fieldset>	
@@ -148,7 +122,7 @@
 						    </select>
 					   
 					
-					<span id="secure-transaction" aria-describedby="c-number"><a href="#">Verify your secure transaction</a></span>
+					<span id="secure-transaction"><label for="lock" class="lock" aria-describedby="c-number">Verify your secure transaction</label></span>
 					
 
 
@@ -160,9 +134,10 @@
 			
 						<button type="submit" name="send">Create your portfolio</button>    				
 				</form>
-				<script src="assets/js/lib/jquery.js"></script>
+				<!-- <script src="assets/js/lib/jquery.js"></script>
 				<script src="assets/js/lib/jquery.validate.min.js"></script>
-				<script src="assets/js/formValidation.js"></script>
+				<script src="assets/js/formValidation.js"></script> -->
+
 				<script src="assets/js/script.js"></script>
 				
 			</body>
