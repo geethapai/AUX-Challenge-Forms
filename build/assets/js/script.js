@@ -48,22 +48,19 @@ function changeCard(card) {
 		var thiscard_button = everyCard[card];
 		document.getElementById(thiscard_button).checked = true;
 
-		if (card == "amex"){
-			document.getElementById("cvv").style.display = "none";
-			document.getElementById("amexcvv").style.visibility = "block";
-
+		if (card === "amex"){
+			document.getElementById("cvv").classList.toggle("is-hidden");
+			document.getElementById("amexcvv").style.display = "block";
 		} else {
-			document.getElementById("amexcvv").style.visibility = "none";
-			document.getElementById("cvv").style.visibility = "block";
+			document.getElementById("amexcvv").style.display = "none";
+			document.getElementById("cvv").style.display = "block";
 		};
-
-
-		};
-
-	}
+	};
+}	
 
 // event listener	
-	document.getElementById("c-number").addEventListener("keyup", function() {
+
+document.getElementById("c-number").addEventListener("keyup", function() {
 
 	var number = document.getElementById("c-number").value;
 
@@ -71,7 +68,6 @@ function changeCard(card) {
 
 	changeCard(card);
 	
-
 });
 
 
@@ -93,21 +89,6 @@ Modernizr.load ([
 
 
 
-
-
-/*(function ($) {
-
-	console.log('I am loaded!');
-
-	// check for "required" input support with modernizr
-	if (!Modernizr.input.required) {
-
-		$.getScript('jquery.js', true, callback);
-		$.getScript('jquery.validate.min.js', true, callback);
-		$.getScript('formValidation.js', true, callback);	
-
-		}
-});*/
 
 
 

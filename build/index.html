@@ -18,21 +18,23 @@
 	    <form action="" method="get" id="form">      
 		
 	<!-- section 1 - portfolio info -->
-			<fieldset class="portfolio">  
-		    <legend>First, name your portfolio</legend>	    
+			<fieldset class="section">  
+		    <legend class="section-legend">First, name your portfolio</legend>	    
 				  
 			    <div class="row-container">    
-					    <label for="portfolio-title">Portfolio title</label> 
-					    <input type="text" id="portfolio-title" name="portfoliotitle" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
+					    <label for="portfolio-title" class="label-pointer">Portfolio title</label> 
+					    <input type="text" id="portfolio-title" class="input-box" name="portfoliotitle" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>
 
 					  
-					    <label for="portfolio-address">Portfolio address</label>
-					   
-					    <!-- <input type="text" id="sample" name="sample" value=".sample.com" tabindex=-1 disabled aria-labelledby="sample"/> -->
+					    <label for="portfolio-address" class="label-pointer">Portfolio address</label>
 
-					    <span class="sample" aria-labelledby="portfolio-address" >.sample.com</span>
 
-					     <input type="text" id="portfolio-address" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required/>	
+					    <input type="text" id="portfolio-address" class="input-box" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required aria-labelledby="portfolio-address sample "/>	
+
+
+					    <label id="sample">.sample.com</label>
+
+
 
 			    </div><!-- row-container -->
 			</fieldset>	
@@ -40,19 +42,19 @@
 	
 	<!-- section 2 - account/contact info -->
 		
-			<fieldset class="account-details">    
-			    <legend>Now, enter your account details</legend>  
+			<fieldset class="section">    
+			    <legend class="section-legend">Now, enter your account details</legend>  
 				    <div class="row-container">  
 						    
-						    <label for="name">Name</label>
-						    <input type="text" id="name" name="name" pattern=".{2,}" required title="At least 2 characters are required."aria-required="true" required/>
+						    <label for="name" class="label-pointer">Name</label>
+						    <input type="text" id="name" name="name" pattern=".{2,}" required title="At least 2 characters are required." aria-required="true" required/>
 				    
 
-						    <label for="email">Email</label>
+						    <label for="email" class="label-pointer">Email</label>
 						    <input type="email" id="email" name="email" aria-describedby="note" aria-required="true" required/>
-							<span id="note" >NOTE: We'll never share your email, promise.</span>
+							<label id="note" >NOTE: We'll never share your email, promise.</label>
 
-						    <label for="pword">Password</label>
+						    <label for="pword" class="label-pointer">Password</label>
 						    <input type="password" id="pword" name="pword" pattern=".{5,}" required title="At least 5 characters are required." required/>
 						
 						</div><!-- row-container -->
@@ -61,11 +63,11 @@
 
 <!-- 	section 3 - payment info  -->
 		
-			<fieldset class="payment">    
-			    <legend>Finally, enter your payment information</legend>  
+			<fieldset class="section">    
+			    <legend class="section-legend">Finally, enter your payment information</legend>  
 				  	<div class="row-container">
 					    
-					    <label for="c-number">Card number</label>
+					    <label for="c-number" class="label-pointer">Card number</label>
 					    <input type="text" pattern="[0-9]{13,16}" id="c-number" name="cnumber" autocomplete="off" aria-required="true" required/>
 
 				   		<fieldset class="cards">
@@ -87,14 +89,18 @@
 
 						  <label for="security" class="security">Security code</label>
 						  <input type="text" id="security" name="security" aria-required="true" required/>
-				   		<span id="cvv" aria-describedby="cvv">The security id is 3 numbers on the back of your card.</span>
-				   		<span id="amexcvv" aria-describedby="amexcvv">
-				   			The security id is 4 numbers on the front of your card.</span>
+				   		
+				   		<label id="cvv-label" class="hidden">The security id is 3 numbers on the back of your card</label>
+				   		<label id="cvv" aria-describedby="cvv-label"></label>
+				   		
+				   		<label id="amexcvv-label" class="hidden">The security id is 4 numbers on the front of your card.</label>
+				   		<label id="amexcvv" aria-describedby="amexcvv-label"></label>
 
 				   	
 
-				    
-					    <label for="expiration-date">Expiration date</label>
+				    <fieldset>
+					    <legend class="expiration-date">Expiration date</legend>
+					    	<label aria-labelledby="select-month" class="hidden">Select the month your card expires.</label>
 					    	<select type="month" label="select-month" id="select-month" name="selectmonth" aria-required="true" required/>
 						    	<option value="0" disabled selected>Month</option>
 						    	<option value="1">January</option>
@@ -110,9 +116,9 @@
 						    	<option value="11">November</option>
 						    	<option value="12">December</option>
 					    	</select>	
-					   
+					   			<label aria-labelledby="select-year" class="hidden">Select the year your card expires.</label>
 								<select type="year" id="select-year" name="selectyear" aria-required="true" required/>
-								  <option value="00" disable selected>Year</option>
+								<option value="00" disable selected>Year</option>
 						    	<option value="1">2014</option>
 						    	<option value="2">2015</option>
 						    	<option value="3">2016</option>
@@ -120,6 +126,8 @@
 						    	<option value="5">2018</option>
 						    	<option value="6">2019</option>
 						    </select>
+						</fieldset>
+
 					   
 					
 					<span id="secure-transaction"><label for="lock" class="lock" aria-describedby="c-number">Verify your secure transaction</label></span>
@@ -132,7 +140,9 @@
 
 				</fieldset><!-- payment -->	
 			
-						<button type="submit" name="send">Create your portfolio</button>    				
+						<button type="submit" name="send" aria-labelledby="submit">Create your portfolio</button>
+						<label id="submit" class="hidden">This button submits the form.</label>
+
 				</form>
 				<!-- <script src="assets/js/lib/jquery.js"></script>
 				<script src="assets/js/lib/jquery.validate.min.js"></script>
