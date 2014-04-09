@@ -75,7 +75,6 @@ document.getElementById("c-number").addEventListener("keyup", function() {
 
 (function () {
 
-console.log("it works")
 
 Modernizr.load ([ 
 	{

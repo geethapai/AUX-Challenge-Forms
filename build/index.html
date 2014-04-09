@@ -28,13 +28,13 @@
 					  
 					    <label for="portfolio-address" class="label-pointer">Portfolio address</label>
 
+					     <label id="sample">.sample.com</label>
 
 					    <input type="text" id="portfolio-address" class="input-box" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required aria-labelledby="portfolio-address sample "/>	
 
 
-					    <label id="sample">.sample.com</label>
 
-
+					    
 
 			    </div><!-- row-container -->
 			</fieldset>	
@@ -73,20 +73,20 @@
 				   		<fieldset class="cards">
 				   			
 				   			<input type="radio" name="cardtype" id="amex-btn" value="american-express">
-				   			<label for="amex-btn" class="amex-btn">American Express</label>
+				   			<label for="amex-btn" class="hidden">American Express</label>
 
 				   			<input type="radio" name="cardtype" id="visa-btn" value="visa">
-				   			<label for="visa-btn" class="visa-btn">Visa</label>
+				   			<label for="visa-btn" class="hidden">Visa</label>
 				   			
 				   			<input type="radio" name="cardtype" id="dsvr-btn"  value="discover">
-				   			<label for="dsvr-btn" class="dsvr-btn">Discover</label>
+				   			<label for="dsvr-btn" class="hidden">Discover</label>
 
 				   			<input type="radio" name="cardtype" id="mc-btn" value="mastercard">
-				   			<label for="mc-btn" class="mc-btn">MasterCard</label>
+				   			<label for="mc-btn" class="hidden">MasterCard</label>
 							</fieldset>
 					  
 						
-
+							<!-- security code  -->
 						  <label for="security" class="security">Security code</label>
 						  <input type="text" id="security" name="security" aria-required="true" required/>
 				   		
@@ -95,10 +95,10 @@
 				   		
 				   		<label id="amexcvv-label" class="hidden">The security id is 4 numbers on the front of your card.</label>
 				   		<label id="amexcvv" aria-describedby="amexcvv-label"></label>
-
+				   		<!-- end security code  -->
 				   	
 
-				    <fieldset>
+				    <fieldset> <!-- expiration date -->
 					    <legend class="expiration-date">Expiration date</legend>
 					    	<label aria-labelledby="select-month" class="hidden">Select the month your card expires.</label>
 					    	<select type="month" label="select-month" id="select-month" name="selectmonth" aria-required="true" required/>
@@ -126,13 +126,11 @@
 						    	<option value="5">2018</option>
 						    	<option value="6">2019</option>
 						    </select>
-						</fieldset>
+						</fieldset> <!-- expiration date -->
 
 					   
-					
+					<!-- lock sign -->
 					<span id="secure-transaction"><label for="lock" class="lock" aria-describedby="c-number">Verify your secure transaction</label></span>
-					
-
 
 					</div> <!-- row-container -->
 
@@ -140,12 +138,14 @@
 
 				</fieldset><!-- payment -->	
 			
+						<!-- button -->
 						<button type="submit" name="send" aria-labelledby="submit">Create your portfolio</button>
 						<label id="submit" class="hidden">This button submits the form.</label>
 
 				</form>
 
 				<script src="assets/js/script.js"></script>
+			
 				
 			</body>
 		</html>
