@@ -90,14 +90,14 @@ legend {
 	content: counter(section-legend);
 	counter-increment: section-legend;
 	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	background-color: #52a3d4;
 	color: #fff;
 	border-radius: 100px;
 	width: 20px;
 	height: 20px;
 	border: solid 5px;
-	padding: 2px 2px 2.7px 2px;
+	padding: 2px 3px 4.7px 3px;
 	display: inline-block;
 	text-align: center;
 	margin-left: -42px;
@@ -185,7 +185,7 @@ button {
  	border-top-right-radius: 10px;
  	background-image: linear-gradient(#167893 , #125e77 );
     /* fallback color */
-    background-color: #146e88 ;
+  background-color: #146e88 ;
 }
 
 h1 {
@@ -203,11 +203,11 @@ h2 {
 
 /*---------fieldset section 1 - name your portfolio*--------*/ 
 #portfolio-address {
-		width: 62%;
+		width: 274px;
 		float: left;
 		border-top-right-radius: 0; 
 		border-bottom-right-radius: 0;
-		margin: 0 0 0 20px;
+		margin: 0 0 0 24px;
 }
 
 
@@ -219,10 +219,10 @@ h2 {
 	font-size: 12px;
 	color: #919191;
 	margin: 0 23px 1px 0;
-	padding: 10px 25px;
+	padding: 9px 25px;
 	border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: inset 0px 1px 2px #adadad;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0px 1px 2px #adadad;
 	
 
 }
@@ -243,6 +243,8 @@ h2 {
 	display: block;
 	width: 44%;
 	margin: 0 0 0 24px;
+	border: 0;
+	box-shadow: inset 0px 1px 3px #adadad;
 }
 
 
@@ -280,7 +282,6 @@ h2 {
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	margin-top: 1px;
 }
 
 
@@ -297,7 +298,6 @@ h2 {
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	margin-top: 1px;
 }
 
 
@@ -313,7 +313,6 @@ h2 {
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	margin-top: 1px;
 }
 
 
@@ -329,7 +328,6 @@ h2 {
 	width: 45px;
 	height: 32px;
 	padding: 0;
-	margin-top: 1px;
 }
 
 
@@ -352,6 +350,8 @@ h2 {
 	display: block;
 	width: 90px;
 	margin: 0 0 0 24px;
+	border: 0;
+	box-shadow: inset 0px 1px 3px #adadad;
 }
 
 #cvv {
@@ -366,7 +366,7 @@ h2 {
 #amexcvv {
 	background: url('/assets/images/sprite.png') no-repeat 0 -331px;
 	width: 70px;
-	height: 33px;
+	height: 28px;
 	display: inline-block;
 	margin: 0;
 	vertical-align: top;
@@ -376,7 +376,7 @@ h2 {
 /*--------------expiration date ---------------*/
 .expiration-date {
 	cursor:pointer;
-	margin: 10px 0 1px 11px;
+	margin: 10px 0 -10px 11px;
 	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
 	color: #575967;
 	font-size: 11px;
@@ -432,10 +432,10 @@ button:hover {
 
 .hidden {
 	position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
 }
 
 

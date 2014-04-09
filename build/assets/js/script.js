@@ -45,15 +45,15 @@ function changeCard(card) {
 
 	if(card) {
 
-		var thiscard_button = everyCard[card];
-		document.getElementById(thiscard_button).checked = true;
+		var thisCardButton = everyCard[card];
+		document.getElementById(thisCardButton).checked = true;
 
 		if (card === "amex"){
-			document.getElementById("cvv").classList.toggle("is-hidden");
-			document.getElementById("amexcvv").style.display = "block";
+			document.getElementById("cvv").style.display='none';
+			document.getElementById("amexcvv").style.display='inline-block';
 		} else {
-			document.getElementById("amexcvv").style.display = "none";
-			document.getElementById("cvv").style.display = "block";
+			document.getElementById("amexcvv").style.display='none';
+			document.getElementById("cvv").style.display='inline-block';
 		};
 	};
 }	
