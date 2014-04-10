@@ -120,6 +120,31 @@ input {
 	border-radius: 5px;	
 }
 
+.banner {
+	background-color: #16748f;
+	width: 467px;
+	margin: auto;
+	padding: 29px;
+	border-top-left-radius: 10px;
+ 	border-top-right-radius: 10px;
+ 	background-image: linear-gradient(#167893 , #125e77);
+    /* fallback color */
+    background-color: #146e88 ;
+}
+
+h1 {
+    font-family: 'Antic Slab', serif;
+    font-size: 36px;
+    color: #fff;
+    padding: 2px;
+}
+
+h2 {
+	color: #b3e3ff;
+	font-size: 10px;
+}
+
+
 .row-container {
 	float: left;
 	width: 450px;
@@ -158,48 +183,22 @@ button {
 	color: #fff;
 	margin-left: 158px;
 	border: 1px;
-	background-image: linear-gradient(#90a932 , #7b992b );
+	background-image: linear-gradient(#90a932 , #7b992b);
     /* fallback color */
     background-color: #819e2d ;
-    /* button border */
-    /*border-radius: 8px;
-    border-color: #aabd62 ;
-    border-width: 2px 0px 0px 2px;*/
 }
 
 /*hiding labels*/
 .hidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
 }
 
 
-.banner {
-	background-color: #16748f;
-	width: 467px;
-	margin: auto;
-	padding: 29px;
-	border-top-left-radius: 10px;
- 	border-top-right-radius: 10px;
- 	background-image: linear-gradient(#167893 , #125e77 );
-    /* fallback color */
-    background-color: #146e88 ;
-}
 
-h1 {
-    font-family: 'Antic Slab', serif;
-    font-size: 36px;
-    color: #fff;
-    padding: 2px;
-}
-
-h2 {
-	color: #b3e3ff;
-	font-size: 10px;
-}
 
 
 /*---------fieldset section 1 - name your portfolio---------*/ 
@@ -275,43 +274,44 @@ h2 {
 
 
 #amex-btn[type=radio] {
-	background: url('/assets/images/sprite.png') no-repeat 0 -290px;
+	background: url('../images/sprite.png') no-repeat 0 -290px;
 }
 
 
 #amex-btn[type=radio]:checked, #amex-btn:hover, #amex-btn:focus   {
-	background: url('/assets/images/sprite.png') no-repeat 0 -122px;
+	background: url('../images/sprite.png') no-repeat 0 -122px;
 }
 
 
 #visa-btn[type=radio] {
-	background: url('/assets/images/sprite.png') no-repeat -48px -164px;
+	background: url('../images/sprite.png') no-repeat -48px -164px;
 }
 
 
 #visa-btn[type=radio]:checked, #visa-btn:hover {
-	background: url('/assets/images/sprite.png') no-repeat -48px -122px;
+	background: url('../images/sprite.png') no-repeat -48px -122px;
 }
 
 
 #dsvr-btn[type=radio]{
-	background: url('/assets/images/sprite.png') no-repeat -96px -206px;
+	background: url('../images/sprite.png') no-repeat -96px -206px;
 }
 
 
 #dsvr-btn[type=radio]:checked, #dsvr-btn:hover {
-	background: url('/assets/images/sprite.png') no-repeat -96px -122px;
+	background: url('../images/sprite.png') no-repeat -96px -122px;
 }
 
 
 #mc-btn[type=radio] {
-	background: url('/assets/images/sprite.png') no-repeat -144px -248px;
+	background: url('../images/sprite.png') no-repeat -144px -248px;
 }
 
 
 #mc-btn[type=radio]:checked, #mc-btn:hover {
-	background: url('/assets/images/sprite.png') no-repeat -144px -122px;
+	background: url('../images/sprite.png') no-repeat -144px -122px;
 }
+
 
 /*----------security label----------*/ 
 .security {
@@ -330,7 +330,7 @@ h2 {
 }
 
 #cvv {
-	background: url('/assets/images/sprite.png') no-repeat 0 -374px;
+	background: url('../images/sprite.png') no-repeat 0 -374px;
 	width: 62px;
 	height: 32px;
 	display: inline-block;
@@ -342,7 +342,7 @@ h2 {
 }
 
 #amexcvv {
-	background: url('/assets/images/sprite.png') no-repeat 0 -331px;
+	background: url('../images/sprite.png') no-repeat 0 -331px;
 	width: 70px;
 	height: 28px;
 	display: inline-block;
@@ -370,7 +370,7 @@ h2 {
 	position: relative;
 	float: right;
 	margin: 0 0 0 5px;
-	background: url('/assets/images/sprite.png') no-repeat -60px -499px;
+	background: url('../images/sprite.png') no-repeat -60px -499px;
 	width: 14px;
 	height: 19px;
 	font-size: 0px;
@@ -380,7 +380,6 @@ h2 {
 /*--------------error messages---------------*/
 .error {
 	float: left;
-/*	display: block;*/
 	color: red;
 	margin-top: 3px;
 	width: 400px;
@@ -392,18 +391,5 @@ select + label {
 	margin: 15px 0 1px 5px;
 }
 
-/*#portfolio-address + label {
-	float: left;
-}
-*/
-/*#c-number + label {
-	position: relative;
-	clear: left;
-
-}*/
-
-
-
-*/
 
 

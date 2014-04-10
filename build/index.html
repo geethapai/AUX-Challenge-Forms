@@ -31,10 +31,7 @@
 					     <label id="sample">.sample.com</label>
 
 					    <input type="text" id="portfolio-address" class="input-box" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required aria-labelledby="portfolio-address sample "/>	
-
-
-
-					    
+	    
 
 			    </div><!-- row-container -->
 			</fieldset>	
@@ -55,7 +52,7 @@
 							<label id="note">NOTE: We'll never share your email, promise.</label>
 
 						    <label for="pword" class="label-pointer">Password</label>
-						    <input type="password" id="pword" name="pword" class="input-box" pattern=".{5,}" required title="At least 5 characters are required." required/>
+						    <input type="password" id="pword" name="pword" class="input-box" aria-required="true" pattern=".{5,}" required title="At least 5 characters are required." required/>
 						
 						</div><!-- row-container -->
 			</fieldset>	
@@ -83,7 +80,8 @@
 
 				   			<input type="radio" name="cardtype" id="mc-btn" value="mastercard">
 				   			<label for="mc-btn" class="hidden">MasterCard</label>
-							</fieldset>
+						
+						</fieldset>
 					  
 						
 							<!-- security code  -->
@@ -117,7 +115,7 @@
 						    	<option value="12">December</option>
 					    	</select>	
 					   			<label aria-labelledby="select-year" class="hidden">Select the year your card expires.</label>
-								<select type="year" id="select-year" name="selectyear" aria-required="true" required/>
+							<select type="year" id="select-year" name="selectyear" aria-required="true" required/>
 								<option value="00" disable selected>Year</option>
 						    	<option value="1">2014</option>
 						    	<option value="2">2015</option>
@@ -126,7 +124,7 @@
 						    	<option value="5">2018</option>
 						    	<option value="6">2019</option>
 						    </select>
-						</fieldset> <!-- expiration date -->
+					</fieldset> <!-- expiration date -->
 
 					   
 					<!-- lock sign -->
@@ -134,18 +132,16 @@
 
 					</div> <!-- row-container -->
 
-					
-
-				</fieldset><!-- payment -->	
+			</fieldset><!-- payment -->	
 			
 						<!-- button -->
 						<button type="submit" name="send" aria-labelledby="submit">Create your portfolio</button>
 						<label id="submit" class="hidden">This button submits the form.</label>
 
-				</form>
+		</form>
 
-				<script src="assets/js/script.js"></script>
-			
+		
+	<script src="assets/js/script.js"></script>		
 				
-			</body>
-		</html>
+	</body>
+</html>
