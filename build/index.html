@@ -28,7 +28,7 @@
 					  
 					    <label for="portfolio-address" class="label-pointer">Portfolio address</label>
 
-					     <label id="sample">.sample.com</label>
+					     <label for="portfolio-address" id="sample">.sample.com</label>
 
 					    <input type="text" id="portfolio-address" class="input-box" name="portfolioaddress" aria-required="true" pattern=".{2,}" required title="At least 2 characters are required." required aria-labelledby="portfolio-address sample "/>	
 	    
@@ -98,7 +98,7 @@
 
 				    <fieldset> <!-- expiration date -->
 					    <legend class="expiration-date">Expiration date</legend>
-					    	<label aria-labelledby="select-month" class="hidden">Select the month your card expires.</label>
+					    	<label for="select-month" class="hidden">Select the month your card expires.</label>
 					    	<select type="month" label="select-month" id="select-month" name="selectmonth" aria-required="true" required/>
 						    	<option value="0" disabled selected>Month</option>
 						    	<option value="1">January</option>
@@ -114,7 +114,8 @@
 						    	<option value="11">November</option>
 						    	<option value="12">December</option>
 					    	</select>	
-					   			<label aria-labelledby="select-year" class="hidden">Select the year your card expires.</label>
+					   		
+					   		<label for="select-year" class="hidden">Select the year your card expires.</label>
 							<select type="year" id="select-year" name="selectyear" aria-required="true" required/>
 								<option value="00" disable selected>Year</option>
 						    	<option value="1">2014</option>
@@ -128,7 +129,7 @@
 
 					   
 					<!-- lock sign -->
-					<span id="secure-transaction"><label for="lock" class="lock" aria-describedby="c-number">Verify your secure transaction</label></span>
+					<span id="secure-transaction"><label for="c-number" class="lock" aria-describedby="c-number">Verify your secure transaction</label></span>
 
 					</div> <!-- row-container -->
 
